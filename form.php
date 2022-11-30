@@ -32,5 +32,6 @@ $nomor = @$_POST['nomor'];
     <td><?= $nomor ?></td>
   </tr>
 </table>
+<script>alert ('Data Sudah Di Input')</script>
 </body>
 </html>
