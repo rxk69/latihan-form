@@ -3,17 +3,34 @@ $nama = @$_POST['nama'];
 $email = @$_POST['email'];
 $alamat = @$_POST['alamat'];
 $nomor = @$_POST['nomor'];
-
-if ($nama) {
-    echo "<strong>Nama  :</strong> {$nama} <br>";
-}
-if ($email) {
-    echo "<strong>Email :</strong> {$email} <br>";
-}
-if ($alamat) {
-    echo "<strong>Alamat:</strong> {$alamat} <br>";
-}
-if ($nomor) {
-    echo "<strong>Nomor:</strong> {$nomor} <br>";
-}
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>table, th, td {
+  border:1px solid black;
+}
+    </style>
+</head>
+<body>
+<table>
+  <tr>
+    <th>Nama</th>
+    <th>email</th>
+    <th>alamat</th>
+    <th>nomor</th>
+  </tr>
+  <tr>
+    <td><?= $nama ?></td>
+    <td><?= $email ?></td>
+    <td><?= $alamat ?></td>
+    <td><?= $nomor ?></td>
+  </tr>
+</table>
+</body>
+</html>
